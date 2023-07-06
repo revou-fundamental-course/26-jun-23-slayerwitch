@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"></script>
+    <title>Frutvi - Revou Mini Coding Assigment</title>
+  </head>
+  <body>
+    <nav>
+      <h2>Frutvi</h2>
+      <div id="menu-button">
+        <a href="#Home">Home</a>
+        <a href="#our-package">Our Package</a>
+        <a href="#call-us">Call Us</a>
+      </div>
+    </nav>
+
+    <div class="title-container">
+      <h1>Top Rated E-Groceries Shop In Indonesia</h1>
+      <h2>Every Day with best ingredients</h2>
+    </div>
+
+    <div class="flex-container">
+      <article>
+        <img src="/img/dan-gold-4_jhDO54BYg-unsplash.jpg" width="100%" alt="" />
+        <figcaption>
+          <i>"Setiap hari beli sayur buah yang fresh disini"</i>
+        </figcaption>
+        <div class="user-profile">
+          <img class="profile-img" src="/img/rachel-mcdermott.jpg" alt="" />
+          <div>
+            <h2>Florence Hughes</h2>
+            <p>Ibu Rumah Tangga, 28</p>
+          </div>
+        </div>
+        <h3>
+          "Sayur Segar Lebih Dekat! Temukan 3 Alasan Mengapa Belanja di Toko Frutvi adalah
+          Pilihan Terbaik Anda!"
+        </h3>
+        <ol>
+          <li>
+            <p class="headline-point">
+              Kualitas Sayur yang Tak Tertandingi: Rasa, Nutrisi, dan Kelezatan dalam Setiap
+              Gigitan!
+            </p>
+          </li>
+          <li>
+            <p class="headline-point">
+              Pengalaman Berbelanja yang Luar Biasa: Pelayanan Ramah, Harga Terjangkau, dan
+              Kenyamanan Tanpa Batas!
+            </p>
+          </li>
+          <li>
+            <p class="headline-point">
+              Dukung Petani Lokal: buah sayur yang segar dari petani lokal sehingga kualitas
+              dan kesegaran terjamin
+            </p>
+          </li>
+        </ol>
+      </article>
+
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+        <form name="contact-form" onsubmit="return verifyForm() && false">
+          <label for="name">Your Name:</label>
+          <p>
+            <input type="text" name="name" placeholder="First and last name" />
+          </p>
+          <label for="email">Email Address:</label>
+          <p>
+            <input type="text" name="email" placeholder="example@email.com" />
+          </p>
+          <label for="phone-number">Phone Number</label>
+          <p>
+            <input type="text" name="phone-number" placeholder="Phone Number" />
+          </p>
+          <label for="message">Message</label>
+          <p>
+            <input type="text" name="message" placeholder="Message" />
+          </p>
+          <button>SEND</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="section-highlight">
+      <h1>Our Package</h1>
+    </section>
+
+    <section class="package-container">
+      <div class="package-item">
+        <img class="package-icon" src="/img/icon/checkmark-circle-outline.svg" width="40px" />
+        <h2 class="package-title">Fresh Vegetable</h2>
+        <p class="package-description">Sayuran segar langsung dari sumber pertanian terbaik</p>
+      </div>
+      <div class="package-item">
+        <img class="package-icon" src="/img/icon/checkmark-circle-outline.svg" width="40px" />
+        <h2 class="package-title">Fresh Fruit</h2>
+        <p class="package-description">
+          Buah dengan kualitas terbaik dari local atau import dan harga yang menarik
+        </p>
+      </div>
+      <div class="package-item">
+        <img class="package-icon" src="/img/icon/car-outline.svg" width="40px" alt="" />
+        <h2 class="package-title">Instant Delivery</h2>
+        <p class="package-description">
+          Di kirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi
+          belanja kamu
+        </p>
+      </div>
+      <div class="package-item">
+        <img class="package-icon" src="/img/icon/star-outline.svg" width="40px" alt="" />
+        <h2 class="package-title">Kitchen Ingredient</h2>
+        <p class="package-description">Bumbu dapur lengkap untuk keperluan memasak kamu</p>
+      </div>
+      <div class="package-item">
+        <img class="package-icon" src="/img/icon/cube-outline.svg" width="40px" alt="" />
+        <h2 class="package-title">Kitchen Set</h2>
+        <p class="package-description">Segala jenis alat masak untuk membantu kamu memasak</p>
+      </div>
+      <div class="package-item">
+        <img class="package-icon" src="/img/icon/bulb-outline.svg" width="40px" alt="" />
+        <h2 class="package-title">Bunding Set</h2>
+        <p class="package-description">
+          Bingung masak apa? sudah tersedia paket untuk kamu masak di dapur mu
+        </p>
+      </div>
+    </section>
+
+    <section class="headline-end">
+      <h1>Mau beli sayur dan buah yang segar?</h1>
+      <p>
+        Dapatkan sayuran segar terbaik dengan mudah dan cepat di Toko Sayur Online kami.
+        Nikmati kelezatan makanan sehat dan hidup seimbang dengan memilih kami sebagai mitra
+        belanja sayur online Anda.
+      </p>
+      <button>CALL TO ACTION</button>
+    </section>
+
+    <footer>
+      <h3>Frutvi</h3>
+      <span>
+        <a href="#">Term of Service</a>
+        <a href="#">Privacy Policy</a>
+      </span>
+      <p>&copy 2023 Frutvi</p>
+    </footer>
+  </body>
+</html>
