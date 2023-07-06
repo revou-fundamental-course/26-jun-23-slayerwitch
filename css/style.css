@@ -19,6 +19,20 @@ nav {
   z-index: 10;
 }
 
+.menu-item {
+  border: 1px solid black;
+  padding: 10px 30px;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+}
+
+.menu-item:hover {
+  color: whitesmoke;
+  background-color: rgb(26, 24, 24);
+  transition: 0.4s;
+}
+
 .title-container,
 .headline-end {
   text-align: center;
@@ -38,17 +52,26 @@ nav {
 
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
-nav #menu-button a {
-  border: 1px solid black;
-  padding: 10px 30px;
-  color: black;
-  text-decoration: none;
-  margin: 0;
+.img-slideshow {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  animation: fade-in-out 1.5s;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
 }
 
 article {
@@ -87,7 +110,7 @@ select {
 }
 
 button {
-  padding: 1rem 160px;
+  padding: 1rem 100px;
   background-color: rgb(26, 24, 24);
   border: none;
   color: white;
@@ -137,16 +160,33 @@ button {
 
 footer {
   text-align: center;
+  background-color: rgb(26, 24, 24);
+  padding: 2px 10px;
+  margin-top: 4rem;
+}
+
+footer h3 {
+  color: white;
 }
 
 footer a,
 footer p {
   color: gray;
   text-decoration: none;
+  transition: 0.2s;
+}
+
+footer a:hover {
+  color: whitesmoke;
 }
 
 @media (max-width: 960px) {
-  .contact-form {
+  .nav-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-item {
     display: none;
   }
 
@@ -157,5 +197,14 @@ footer p {
 
   .title-container h2 {
     font-size: 1rem;
+  }
+
+  .img-slideshow {
+    height: 300px;
+  }
+
+  .headline-end,
+  .title-container {
+    padding: 0 1.2rem;
   }
 }
